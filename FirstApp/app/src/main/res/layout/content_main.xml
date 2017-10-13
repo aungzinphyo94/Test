@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sanwinaung.firstapp.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/testEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:name="com.example.sanwinaung.firstapp.fragment.TestFragment"
+        android:id="@+id/fragOne"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:name="com.example.sanwinaung.firstapp.fragment.FooFragment"
+        android:layout_height="50dp"
+        android:id="@+id/fragTwo"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/fragThree"
+        android:name="com.example.sanwinaung.firstapp.fragment.BarFragment"/>
+
+</LinearLayout>
+
+</RelativeLayout>
